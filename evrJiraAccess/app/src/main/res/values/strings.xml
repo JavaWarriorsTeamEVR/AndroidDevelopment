@@ -1,3 +1,43 @@
 <resources>
     <string name="app_name">EVR Jira Access</string>
+
+    <string name="lab_issuekey">Issue</string>
+    <string name="lab_summary">Summary</string>
+
+    <string name="lab_settings">Settings</string>
+
+    <string name="lab_btosave">Save</string>
+    <string name="lab_btocancel">Cancel</string>
+    <string name="lab_btodatesel">Select Date</string>
+
+    <string name="lab_hours">Hours</string>
+    <string name="lab_minute">Minute</string>
+    <string name="lab_worklog">Work log</string>
+    <string name="lab_workloghint">Work log description</string>
+    <string name="lab_dateselected">Date selected</string>
+    <string name="lab_worktimeselected">Selects worklog time</string>
+    <string name="lab_username">Username</string>
+    <string name="lab_pass">Password</string>
+    <string name="lab_uri">Jira URL</string>
+    <string name="lab_qstring">Query</string>
+
+    <string name="msg_workloggood">The worklog was saved</string>
+    <string name="msg_worklogbad">Sorry, the worklog was not saved</string>
+    <string name="msg_worklogmandatory">The worklog description is mandatory</string>
+    <string name="msg_worklogtimemandatory">The worklog time is mandatory</string>
+
+    <string name="msg_settingsgood">The settings was saved</string>
+    <string name="msg_settingblank">You must to settings the Jira Parameters, go to Setting on Menu</string>
+
+    <string-array name="aminutes">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="set_querystringini">assignee = currentUser() AND resolution = Unresolved ORDER BY updatedDate DESC</string>
+
 </resources>

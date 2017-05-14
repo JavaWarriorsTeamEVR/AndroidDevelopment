@@ -11,26 +11,25 @@ public class Constants {
     public static final String STR_NOTAVAILABLE = "na";
     public static final String STR_CHART_SET = "ISO-8859-1";
     public static final String STR_SPACE = " ";
+    public static final String STR_DASH = "-";
+    public static final String STR_EMPTY = "";
+
+    public static final String STR_FORMATED_SHORT_DATE = "dd-MM-yyyy";
+    public static final String STR_FORMATED_LONG_DATE = "dd-MM-yyyy HH:mm:ss";
 
     public static final String STR_SN_FACEBOOK = "facebook";
     public static final String STR_SN_TWITTER = "twitter";
 
-    public static final String STR_VAR_CODEYTBE = "codeytbe";
-    public static final String STR_VAR_LEVEL = "levelvideo";
-    public static final String STR_VAR_TOT_GA = "ganswers";
-    public static final String STR_VAR_TOT_BA = "banswers";
-    public static final String STR_VAR_TOT_PT = "totalspts";
-    public static final String STR_VAR_GPGS = "gpgservice";
-
-    public static final String STR_PREF_PERSONALINFO = "perInfo";
+    public static final String STR_PREF_USR = "usr";
+    public static final String STR_PREF_PAS = "pas";
+    public static final String STR_PREF_URL = "url";
+    public static final String STR_PREF_QST = "qst";
 
     public static final int INT_ZERO = 0;
     public static final int INT_THOUSAND = 1000;
 
     public static final int INT_REQUESTCODE_MAIN = INT_THOUSAND;
-
-    public final static String STR_BUNDLE_KEY_AD_BEAN = "AD_BEAN";
-
+    public static final int INT_REQUESTCODE_SETTINGS = INT_THOUSAND + 1;
 
     public final static String STR_ANALYTICS_CAT_SOCIAL_NETWARE = "socialNetware";
     public final static String STR_ANALYTICS_CAT_ADS = "ads";

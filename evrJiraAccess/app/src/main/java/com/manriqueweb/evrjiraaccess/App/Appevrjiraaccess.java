@@ -1,4 +1,4 @@
-package com.manriqueweb.evrjiraaccess.app;
+package com.manriqueweb.evrjiraaccess.App;
 
 import android.app.Application;
 import android.util.Log;

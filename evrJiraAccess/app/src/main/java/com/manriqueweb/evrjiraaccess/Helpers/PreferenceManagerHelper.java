@@ -1,4 +1,4 @@
-package com.manriqueweb.evrjiraaccess.Services;
+package com.manriqueweb.evrjiraaccess.Helpers;
 
 
 import android.content.Context;
@@ -11,21 +11,21 @@ import com.manriqueweb.evrjiraaccess.Utils.Constants;
 /**
  * Created by omar on 24/05/16.
  */
-public class PreferenceManagerService {
+public class PreferenceManagerHelper {
     private static SharedPreferences preferences = null;
 
-    private static PreferenceManagerService instance = null;
+    private static PreferenceManagerHelper instance = null;
 
-    private PreferenceManagerService(){
+    private PreferenceManagerHelper(){
     }
 
-    private PreferenceManagerService(Context context){
+    private PreferenceManagerHelper(Context context){
         preferences = PreferenceManager.getDefaultSharedPreferences(context);
     }
 
-    public static synchronized PreferenceManagerService getInstance(Context context) {
+    public static synchronized PreferenceManagerHelper getInstance(Context context) {
         if (instance==null){
-            instance = new PreferenceManagerService(context);
+            instance = new PreferenceManagerHelper(context);
         }
         return instance;
     }

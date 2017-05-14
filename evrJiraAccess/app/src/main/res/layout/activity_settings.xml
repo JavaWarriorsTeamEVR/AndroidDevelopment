@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.manriqueweb.evrjiraaccess.Screens.SettingsActivity">
+
+    <!-- Username -->
+    <TextView
+        android:id="@+id/lab_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/lab_username"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_username"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="textNoSuggestions"
+        android:hint="@string/lab_username"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        />
+
+    <!-- Pass -->
+    <TextView
+        android:id="@+id/lab_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_username"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/lab_pass"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edt_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_pass"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="@string/lab_pass"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        />
+
+
+    <!-- URL -->
+    <TextView
+        android:id="@+id/lab_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_pass"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/lab_uri"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edt_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_url"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="textUri"
+        android:hint="@string/lab_uri"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        />
+
+    <!-- Query String -->
+    <TextView
+        android:id="@+id/lab_qstring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_url"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:text="@string/lab_qstring"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/colorPrimaryDark" />
+
+    <EditText
+        android:id="@+id/edt_qstring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lab_qstring"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:ems="10"
+        android:inputType="textLongMessage|textNoSuggestions|textMultiLine"
+        android:hint="@string/lab_qstring"
+        android:textColorHint="@color/colorAccent"
+        android:textColor="@color/colorPrimaryDark"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        />
+
+    <LinearLayout
+        android:id="@+id/llbto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edt_qstring"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:clickable="true"
+            android:text="@string/lab_btosave"
+            android:textColor="#f25a55"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llWait"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp">
+
+    </LinearLayout>
+</RelativeLayout>
