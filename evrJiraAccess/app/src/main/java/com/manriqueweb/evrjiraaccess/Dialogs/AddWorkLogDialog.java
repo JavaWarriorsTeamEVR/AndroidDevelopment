@@ -98,7 +98,7 @@ public class AddWorkLogDialog extends Dialog implements View.OnClickListener {
         numberMinutTime.setWrapSelectorWheel(false);
 
         mYear = c.get(Calendar.YEAR);
-        mMonth = c.get(Calendar.MONTH);
+        mMonth = c.get(Calendar.MONTH)+1;
         mDay = c.get(Calendar.DAY_OF_MONTH);
 
         txt_dateselected.setText(getDateFormate(mYear, mMonth, mDay));
@@ -126,7 +126,7 @@ public class AddWorkLogDialog extends Dialog implements View.OnClickListener {
                     Toast.makeText(getContext(), getContext().getString(R.string.msg_worklogmandatory), Toast.LENGTH_LONG).show();
                     validateDataValue = false;
                 }
-                if(validateDataValue && (numberHourTime.getValue()==0 && numberHourTime.getValue()==0)){
+                if(validateDataValue && (numberHourTime.getValue()==0 && numberMinutTime.getValue()==0)){
                     Toast.makeText(getContext(), getContext().getString(R.string.msg_worklogtimemandatory), Toast.LENGTH_LONG).show();
                     validateDataValue = false;
                 }
