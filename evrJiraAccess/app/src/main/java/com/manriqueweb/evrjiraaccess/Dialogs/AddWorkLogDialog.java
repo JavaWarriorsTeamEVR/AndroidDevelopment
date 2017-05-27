@@ -162,7 +162,7 @@ public class AddWorkLogDialog extends Dialog implements View.OnClickListener {
                         txt_dateselected.setText(getDateFormate(year, monthOfYear+1, dayOfMonth));
 
                     }
-                }, mYear, mMonth, mDay);
+                }, mYear, mMonth-1, mDay);
         datePickerDialog.show();
     }
 
